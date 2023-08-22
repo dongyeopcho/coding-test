@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'aoai-code-reviewer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D6C9099CAF5A496B8096A7B1AE1234CC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B9774EB4CA1140049E45157D81470B5A }}
           package: '*.war'
