@@ -42,6 +42,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
+          path: ./java-app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -50,4 +51,4 @@ jobs:
           app-name: "aoai-code-reviewer"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_915E667F0D524A8F84F7A0DE786CEBE5 }}
-          package: "java-app/*.war"
+          package: "./java-app/*.war"
