@@ -50,4 +50,4 @@ jobs:
           app-name: "aoai-code-reviewer"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_915E667F0D524A8F84F7A0DE786CEBE5 }}
-          package: "./java-app/*.war"
+          package: "*.war"
