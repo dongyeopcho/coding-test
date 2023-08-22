@@ -39,7 +39,9 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-bootWar {
-    archiveBaseName.set("coding-test")
-    archiveVersion.set("")
+tasks {
+    getByName<org.springframework.boot.gradle.tasks.bundling.BootWar>("bootWar") {
+        archiveBaseName.set("coding-test")
+        archiveVersion.set("")
+    }
 }
